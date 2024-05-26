@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    background-image: url(images/background.jpg);
+    background-size: cover;
+    font-family: "Poppins", sans-serif;
+}
+h1{
+    font-family: "Poppins", sans-serif;
+    font-size: 48pt;
+    text-align: center;
+    color: rgb(210, 233, 234);
+}
+.tasks{
+    display: flex;
+    justify-content: center;
+    max-width: 800px;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0 auto;
+}
+.blur{
+    backdrop-filter: blur(2.5px);
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 25px;
+}
+.task{
+    border: 1px solid rgb(81, 165, 42);
+    border-radius: 7px;
+    background-color: rgba(255, 255, 255, 0.65);
+    height: 50px;
+    min-width: 600px;
+    text-align: center;
+    align-content: center;
+}
+.complete{
+    height: 30px;
+    width: 30px;
+    border-radius: 20%;
+    position: relative;
+    align-self: center;
+}
+.task_complete{
+    text-decoration:line-through;
+}
+.delete{
+    border-radius: 10px;
+    border: none;
+    height: 45px;
+    width: 90px;
+    color: aliceblue;
+    align-self: center;
+}
+.add{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 40px;
+}
+#taskInput {
+    height: 45px;
+    width: 600px;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: none;
+}
+#taskInput, #add, .delete{
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+}
+#add, .delete{
+    background-color: rgb(31, 31, 31);
+}
+#add{
+    border: none;
+    border-radius: 13px;
+    height: 45px;
+    width: 90px;
+    color: aliceblue;
+}
